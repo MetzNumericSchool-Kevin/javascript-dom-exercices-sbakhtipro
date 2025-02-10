@@ -11,6 +11,9 @@ nouveauP.textContent = `Pour cela, il vous suffit de cliquer sur une des potions
 descriptionBoutique.appendChild(nouveauP)
 
 // ------------------ ex 3 ------------------
+
+document.querySelector('#blague_de_roger_le_sorcier').remove()
+
 // ------------------ ex 4 ------------------
 // ------------------ ex 5 ------------------
 // ------------------ ex 6 ------------------
