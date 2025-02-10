@@ -1,5 +1,7 @@
 // ------------------ ex 1 ------------------
 
+const { temp } = require("three/tsl");
+
 const titreH1 = document.querySelector('h1');
 console.log(titreH1);
 
@@ -52,6 +54,32 @@ green.addEventListener('click', () => {
 
 // ------------------ ex 6 ------------------
 
+const potions = [
+  {
+    nom: "Potion de soin",
+    description: "Cette potion rouge vif a une odeur de fraise des bois. Un seul gorgée et vos blessures se referment comme par magie ! Effets secondaires possibles: cheveux roses pendant 24h.",
+    prix: 10,
+  },
+  {
+    nom: "Potion de sommeil",
+    description: "Un liquide bleu nuit qui sent la lavande et les rêves. Une goutte et vous dormirez comme un bébé dragon ! Attention: ne pas utiliser si vous devez combattre un troll dans les prochaines 8 heures.",
+    prix: 50,
+  },
+];
+
+const template = document.querySelector('#template_potion')
+const liste = document.querySelector('#liste_potions')
+
+for (i=0;i<potions.length;i+=1) {
+    const clone = template.content.cloneNode(true)
+    let nomPotion = clone.querySelector('.nom_potion')
+    nomPotion.textContent = potions[i].nom
+    let prixPotion = clone.querySelector('.prix_potion')
+    prixPotion.textContent = potions[i].prix
+    let descriptionPotion = clone.querySelector('.description_potion')
+    descriptionPotion.textContent = potions[i].description
+    liste.appendChild(clone)
+}
 
 
 // ------------------ ex 7 ------------------
