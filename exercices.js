@@ -1,40 +1,15 @@
 // ------------------ ex 1 ------------------
 
-const titreH1 = document.querySelector('h1')
-console.log(titreH1)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const titreH1 = document.querySelector('h1');
+console.log(titreH1);
 
 // ------------------ ex 2 ------------------
+
+const descriptionBoutique = document.querySelector('#description_boutique')
+let nouveauP = document.createElement('p')
+nouveauP.textContent = `Pour cela, il vous suffit de cliquer sur une des potions de la liste ci-dessous pour l'acheter`
+descriptionBoutique.appendChild(nouveauP)
+
 // ------------------ ex 3 ------------------
 // ------------------ ex 4 ------------------
 // ------------------ ex 5 ------------------
